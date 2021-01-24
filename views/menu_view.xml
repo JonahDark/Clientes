@@ -1,0 +1,12 @@
+ <odoo>
+     <data>
+     
+     
+      <menuitem name="Clientes" id="clientes.menu_root"/>
+      <menuitem name="Operaciones" id="clientes.menu_operaciones" parent="clientes.menu_root"/>
+      <menuitem name="Clientes" id="clientes.menu_cliente" parent="clientes.menu_operaciones" action="clientes.cliente_action_window"/>
+      <menuitem name="Facturas" id="clientes.menu_factura" parent="clientes.menu_operaciones" action="clientes.facturas_action_window"/>
+      <menuitem name="Productos" id="clientes.menu_producto" parent="clientes.menu_operaciones" action="clientes.productos_action_window"/>
+  
+     </data>
+ </odoo>

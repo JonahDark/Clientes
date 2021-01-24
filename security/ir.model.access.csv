@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_clientes_cliente_model,clientes.cliente_model,model_clientes_cliente_model,,1,1,1,1
+access_clientes_factura_model,clientes.factura_model,model_clientes_factura_model,,1,1,1,1
+access_clientes_producto_model,clientes.producto_model,model_clientes_producto_model,,1,1,1,1

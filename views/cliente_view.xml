@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+
+        <record model="ir.ui.view" id="clientes_tree">
+            <field name="name">Listado de clientes</field>
+            <field name="model">clientes.cliente_model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="apellidos" />
+                    <field name="dni" />
+                    <field name="telefono" />
+                    <field name="email" />
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- explicit form view definition -->
+
+        <record model="ir.ui.view" id="clientes_form">
+            <field name="name">Formulario de clientes</field>
+            <field name="model">clientes.cliente_model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="padre">
+                        <group name="1">
+                            <field name="dni" />
+                            <field name="name" />
+                            <field name="telefono" />
+                            <field name="facturas" />
+                        </group>
+                        <group name="2">
+                            <field name="foto" widget="image" />
+                            <field name="apellidos" />
+                            <field name="email" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+
+        <record model="ir.actions.act_window" id="clientes.cliente_action_window">
+            <field name="name">Clientes</field>
+            <field name="res_model">clientes.cliente_model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
