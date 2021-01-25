@@ -6,12 +6,12 @@ class cliente_model(models.Model):
 
     _name = 'clientes.cliente_model'
     _description = 'Modelo de cliente'
-
-    
-    name = fields.Char(string="Nombre", required=True)
+        
     dni = fields.Char(string="DNI", index=True, required=True)
-    apellidos = fields.Char(string="Apellidos", required=True)
     foto = fields.Binary(string="Foto")
+    name = fields.Char(string="Nombre", required=True)
+    apellidos = fields.Char(string="Apellidos", required=True)
+    
     telefono = fields.Char(string="Telefono", required=True)
     email = fields.Char(string="Email", required=True)
     facturas = fields.One2many('clientes.factura_model','cliente',string="Facturas")

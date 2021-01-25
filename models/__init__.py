@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import cliente_model,factura_model,producto_model
+from . import cliente_model,factura_model,producto_model,detalle_model

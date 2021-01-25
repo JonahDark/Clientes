@@ -6,7 +6,10 @@ class producto_model(models.Model):
     _name = 'clientes.producto_model'
     _description = 'Modelo de producto'
 
-    name = fields.Char(string="Referencia", required=True, index=True)
+    name = fields.Char(string="Nombre", required=True, index=True)
     descripcion = fields.Html(string="Descripcion", required=True)
-    pvp = fields.Integer(string="Precio")
-    factura = fields.Many2one("clientes.factura_model",string="Factura")
+    precio = fields.Integer(string="Precio")
+
+    
+    detalle_producto=fields.One2many("clientes.detalle_model","id_producto","producto")#Un producto puede estar en muchas lineas de detalle
+    

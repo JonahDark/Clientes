@@ -26,16 +26,21 @@
                 <form>
                     <group name="padre">
                         <group name="1">
-                            <field name="name" />                            
+                            <field name="name" />
                             <field name="cliente" />
-                            <field name="productos" />
+                            <field name="detalle_factura">
+                                <tree>
+                                    <field name="id_producto"/>
+                                    <field name="cantidad"/>
+                                </tree>
+                            </field>
                             <field name="base" />
                             <field name="total" />
-                            
+
                         </group>
                         <group name="2">
-                            <field name="fecha" />                            
-                            <field name="iva" /> 
+                            <field name="fecha" />
+                            <field name="iva" />
                         </group>
                     </group>
                 </form>

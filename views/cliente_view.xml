@@ -32,7 +32,7 @@
                             <field name="facturas" />
                         </group>
                         <group name="2">
-                            <field name="foto" widget="image" />
+                            <field name="foto" widget="image" style="width: 120px; height: 150px;"/>
                             <field name="apellidos" />
                             <field name="email" />
                         </group>

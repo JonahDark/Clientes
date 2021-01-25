@@ -23,7 +23,7 @@
                     <group name="padre">
                         <field name="name" />
                         <field name="descripcion" />
-                        <field name="pvp" />
+                        <field name="precio" />
                     </group>
                 </form>
             </field>
